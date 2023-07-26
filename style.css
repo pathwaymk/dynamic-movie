@@ -1,0 +1,140 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+header h1{
+    color: #E50914;
+}
+
+header button{
+    background-color: #E50914;
+    border: 0px;
+    border-radius: 1rem;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+main h2{
+    font-size: 2.3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main p{
+    font-size: 1.4rem;
+}
+
+.info{
+    display: flex;
+    margin-top: 0.8rem;
+    gap: 1rem;
+}
+
+.about{
+    text-align: center;
+}
+
+
+.moviebtn img{
+    width: 15px;
+}
+
+.moviebtn button{
+    background-color: #E50914;
+    display: flex;
+    border: 0px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+
+.moviebtn{
+    display: flex;
+    gap: 1rem;
+}
+
+footer{
+    /* height: 20vh; */
+    padding: 0%;
+    margin: 0;
+}
+.recommendationSec{
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    padding-bottom: 0.5rem;
+}
+
+.recommendation div:nth-of-type(1){
+    width: 30%;
+    overflow: hidden;
+    /* background-color: #E50914; */
+}
+
+.recommendation img{
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+
+
+
+@media only screen and (max-width : 350px) {
+    main{
+        height: 71vh;
+    }
+}
+
+
+@media only screen and (min-width : 380px) {
+    main{
+        height: 67vh;
+    }
+}
+
+
+@media only screen and (min-width : 800px) {
+    main{
+        height: 65vh;
+    }
+}
+
+@media only screen and (min-width : 950px) {
+    main{
+        height: 67vh;
+    }
+    .recommendationSec{
+        display: flex;
+        flex-direction: row;
+    }
+}
